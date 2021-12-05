@@ -1,0 +1,311 @@
+@import url(../css/import.css);
+/* --------Global classes start--------- */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: var(--pop-reg);
+  font-size: 17px;
+}
+:root {
+  /* fonts */
+  --pop-bold: Poppins-Bold;
+  --pop-med: Poppins-Medium;
+  --pop-reg: Poppins-Regular;
+  --pop-semibold: Poppins-SemiBold;
+  /* fonts end  */
+}
+.f-size-13{
+  font-size: 13px;
+}
+.f-size-14{
+  font-size: 14px;
+}
+.f-size-15{
+  font-size: 15px;
+}
+.pop-reg {
+  font-family: var(--pop-reg);
+}
+.pop-semibold {
+  font-family: var(--pop-semibold);
+}
+.pop-bold {
+  font-family: var(--pop-bold);
+}
+.pop-med {
+  font-family: var(--pop-med);
+}
+.rob-reg {
+  font-family: Roboto-Regular;
+}
+.rob-med {
+  font-family: Roboto-Medium;
+}
+.rob-bold {
+  font-family: Roboto-Bold;
+}
+
+.section-title {
+  font-size: 41px;
+  font-weight: bold;
+  color: #112e41;
+}
+.section-subtitle {
+  color: #ff7214;
+  text-transform: uppercase;
+}
+a.btn{
+  border: 2px solid;
+	background: #ff7214;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+  margin-top: 20px;
+  border-radius: 50px;
+  color: aliceblue;
+  background: linear-gradient(60deg, #154ab9 50%, #ff7214 50%);
+  background-position: right bottom;
+  background-size: 220% 100%;
+}
+a.btn:hover{
+  background-position: left bottom;
+	color: #fff;
+}
+.text-light2{
+  color: rgba(255, 255, 255, 0.603);
+}
+/* --------Global classes end--------- */
+
+/* ----------------Header section start----------------  */
+.header {
+  padding-top: 40px;
+  background: #f7f7f7;
+}
+.c-menu ul li {
+  margin: 15px;
+  text-transform: uppercase;
+  font-family: Roboto-Medium;
+  color: rgb(0, 0, 0) !important;
+}
+.c-menu ul li a {
+  color: rgb(0, 0, 0) !important;
+  font-size: 15px !important;
+}
+
+.c-menu ul li a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.c-menu ul li a::after {
+  content: "";
+  display: block;
+  background: #154ab9;
+  height: 2px;
+  width: 100%;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in;
+}
+
+/* ----------------Header section end----------------  */
+
+/* ----------------Banner section start----------------  */
+.banner {
+  background: #f7f7f7;
+  padding-bottom: 50px;
+}
+.banner-left {
+  margin-top: 160px;
+}
+
+
+.section-subtitle {
+  color: #ff7214;
+}
+.banner-left .btn {
+  border: 2px solid;
+	background: #ff7214;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+  margin-top: 20px;
+  border-radius: 50px;
+  color: aliceblue;
+  background: linear-gradient(60deg, #154ab9 50%, #ff7214 50%);
+  background-position: right bottom;
+  background-size: 220% 100%;
+}
+.banner-left .btn:hover{
+  background-position: left bottom;
+	color: #fff;
+}
+/* ----------------Banner section end----------------  */
+
+/* ----------------about company section start----------------  */
+.about-company{
+  margin-top: 150px;
+}
+.slider-btn{
+  border: 2px solid;
+	background: #ff7214;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+  padding-left: 30px !important;
+  border-radius: 50px;
+  color: aliceblue;
+  text-align: center;
+  background: linear-gradient(60deg, #154ab9 50%, #ff7214 50%);
+  background-position: right bottom;
+  background-size: 220% 100%;
+}
+.button-arrow{
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+.slider-btn:hover{
+  background-position: left bottom;
+	color: #fff;
+}
+.slider-btn:hover .button-arrow{
+  visibility: visible;
+  opacity: 1;
+  padding-left: 10px;
+
+}
+/* ----------------about company section end----------------  */
+.feature{
+  margin-top: 150px;
+}
+
+.card .icon{
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+
+}
+.card .icon img{
+  height: 30px;
+  margin: 18px;
+
+}
+/* ----------------features section start----------------  */
+
+/* ----------------features section end----------------  */
+
+/* ----------------blog section start----------------  */
+.blog{
+  margin-top: 120px;
+}
+.slider-btn2{
+  display: inline-block;
+  font-family: Roboto-Bold;
+  background: #ffffff;
+  color: #333333;
+  text-transform: uppercase;
+  z-index: 999;
+  text-decoration: none;
+}
+.button-arrow{
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+.slider-btn2:hover .button-arrow{
+  visibility: visible;
+  opacity: 1;
+  padding-left: 15px;
+}
+/* ----------------blog section end----------------  */
+
+/* ----------------info section start----------------  */
+.info{
+  margin-top: 120px;
+  padding: 80px;
+  background: #162b45;
+}
+/* ----------------info section end----------------  */
+
+/* ----------------testimonial section start----------------  */
+.testimonial{
+  margin-top: 120px;
+}
+#testimonial .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.carousel-control-prev{
+  left: 38% !important;
+  top: -200px;
+}
+.carousel-control-next{
+  right: 38% !important;
+  top: -200px;
+}
+/* ----------------testimonial section end----------------  */
+
+/* ----------------team section start----------------  */
+.team{
+  margin-top: 120px;
+}
+.team-item-subheading,.team-item-link div {
+  font-size: 13px;
+}
+.team-item-link div a{
+  color: #333333;
+  text-decoration: none;
+  font-family: Roboto-Regular;
+}
+.team-item-heading:hover,.team-item-subheading:hover,.team-item-link div a:hover{
+  color: #ff7214;
+  cursor: pointer;
+  transition: 0.2s;
+}
+/* ----------------team section end----------------  */
+
+/* ----------------blog2 section start----------------  */
+.blog-react{
+  cursor: pointer;
+}
+.blog-react img{
+  width: 30px !important;
+}
+.like{
+  width: 15px !important;
+}
+.blog-date{
+  padding-top: 20px;
+}
+/* ----------------blog2 section end----------------  */
+
+/* ----------------contact section start----------------  */
+.contact{
+  margin-top: 100px;
+}
+.contact-input div .form-control{
+  height: 60px;
+  margin-top: 20px;
+}
+.contact-reg{
+  color: #00000096;
+}
+/* ----------------contact section end----------------  */
+
+/* ----------------client section start----------------  */
+.client-logo{
+  margin-top: 100px;
+}
+/* ----------------client section end----------------  */
+
+/* ----------------footer section start----------------  */
+footer.footer{
+  padding-top: 80px;
+  background-color: #162b45;
+  margin-bottom: -16px;
+}
+.copyright{
+  background-color: #10233a;
+}
+
+/* ----------------footer section end----------------  */
